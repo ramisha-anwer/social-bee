@@ -1,0 +1,8 @@
+# how to write mutation without hardcoding the fields 
+mutation Register($options: UsernamePasswordInput!){
+    register(options: $options){
+      ...RegularUserResponse
+    }
+     
+}
+
